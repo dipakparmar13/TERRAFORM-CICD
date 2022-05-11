@@ -19,8 +19,8 @@ pipeline {
                   steps {
                       sh  "terraform plan"
                    }
-           } 
-          stage('terraform-apply') {
+                 } 
+                stage('terraform-apply') {
                   steps {
                       input 'Do you approve apply?'
                       sh  "terraform apply"
