@@ -16,7 +16,7 @@ variable "aws_region" {
 
 variable "env" {
     description = "Project environment "
-    default = "production"
+    default = "dev"
 }
 
 variable "vpc_cidr" {
