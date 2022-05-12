@@ -19,7 +19,7 @@ pipeline {
                 stage('terraform-apply') {
                   steps {
                       input 'Do you approve apply?'
-                      sh  "terraform distroy -auto-approve"
+                      sh  "terraform apply -auto-approve"
                    }
            } 
            
